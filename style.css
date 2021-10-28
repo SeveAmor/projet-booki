@@ -1,11 +1,19 @@
-
-body { 
-    background-color:white;
+* {
     font-family: 'Raleway' , 'sans-serif';
+    
+}
+body { 
     font-size: 16px;
-    margin: auto;
-    width: 95%;
+    margin: 0px;
+    padding: 0px 50px; 
 } 
+.container {
+	display: flex;
+	justify-content: center;
+}
+.container > * {
+	width: 100%;
+}
 a{
     color:black;
     text-decoration: none;
@@ -15,19 +23,13 @@ a:hover{
     text-decoration: none;
 }
 h1{
-    display: block;
-    font-size: 25px;
-    font-family: "Raleway", "sans-serif";
-    font-weight: bold;
-    margin-bottom: 0px;       
+    font-size:150%;     
 }
 h2{
-    font-size: 24px;
-    margin-block-start: 13px;
-    margin-block-end: 13px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    font-size: 130%;
+}
+h3{
+    font-size: 100%;
 }
 .fa-star{
     color: #0065fc;
@@ -37,42 +39,50 @@ h2{
 }
 
 /*****************HEADER******************/
-.header{
+
+.container{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+} 
+header{
+    display: flex;
     justify-content: space-between; 
-    align-items: flex-end; 
-}    
-.logo{
-    display:block;
-    float: left;
-    width: 100px;
-    padding: 20px;
+}  
+header .logo{
+    padding: 25px 0px;
+    width: 150px;
 }
-.nav a{ 
-    display: inline-block;            
-    padding: 20px;  
+header nav ul{ 
+    display: flex;            
+    list-style-type: none;  
+    margin: 0;
 }
-a.menu:hover{
-    color: inherit;
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 2px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li a{
+    color: black;
     text-decoration: none;
+}
+header nav ul li:hover {
+    border-color: #0065fc;
+}
+header nav ul li:hover a {
     color: #0065fc;
-    border-top: 2px solid #0065fc;
 }
 /*********************RECHERCHE***************/
-.recherche{
+#recherche{
     display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: stretch;
     padding: 10px;
 }
-.search-soustitre{
+.soustitre{
     display: block;
     margin-top: 0px;
-    padding-top:5px;
+    padding-top:0px;
 }
 .search{
     height: 50px;
@@ -93,30 +103,32 @@ a.menu:hover{
     padding: 0 24px;
     box-sizing: border-box;
     height: 50px;
-    width: 224px;
     font-size: 16px;
     font-weight: bold;
 }
-.bouton{
+.fa-search {
+    display: none;   
+}
+.bouton {
     background-color: #0065FC;
     color: white;
     border: none;
     border-radius: 0 16px 16px 0;
     padding: 0 24px;
-    font-family: "Raleway", "Sans serif";
-    font-size:16px;
+    font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     height: 50px;
     outline: none;
 }
 .bouton:hover{
-    transform: translateY(1px);
-    box-shadow:0 2px #71A9FF;
+    transform: translateY(2px);
+    box-shadow:0 0 16px #707070;
+    
 }
 .bouton:active{
-    transform: translateY(2px);
-    box-shadow: 0 1px black;
+    transform: translateY(4px);
+    box-shadow: 0 1px #dedee0;
 }
 
 /***************FILTRES*******************/
@@ -129,17 +141,18 @@ a.menu:hover{
     align-items: center;
     margin-right: 20px;
 }
-.filtre-titre{
+.filtretitre{
     display: flex;
     align-items: center;
-    margin: 20px 16px 16px 0;
+    margin-right: 32px;
 }
-.module{
+.filtre-box{
+    display: flex;
+    align-items: center;
     border: 2px solid #f2f2f2;
     border-radius: 30px;
     height: 40px;
-    margin-right: 20px;
-    text-align: center;
+    margin: 0px 15px;
     cursor: pointer;    
 }
 .icon{
@@ -154,76 +167,55 @@ a.menu:hover{
 }      
 .text{
     font-weight: bold;
-    padding-left: 10px;
+    padding: 10px;
 }
-.module:hover> .icon{
+.filtre-box:hover> .icon{
     color: white;
     background-color: #0065fc; 
 }
-.module:hover{
+.filtre-box:hover{
     transform: translateY(1px);
     box-shadow:0 2px #f2f2f2;
     background-color: #f2f2f2;
 }
-.module:active{
+.filtre-box:active{
     transform: translateY(2px);
     box-shadow: 0 1px black;  
 }
 /**************INFO***********/
-.info-icon{
-    color: #0065FC;
+.info {
     display: flex;
-    align-items: center; 
+    padding: 20px 0 20px 0;
 }
-.center{
-    margin: 0;
+.info .fas.fa-info {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.circle-icon{
-    width: 20px;
-    height: 20px;
-    border: 2px solid #f2f2f2;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: #0065fc;
+    border: 1px solid #F2F2F2;
     border-radius: 100%;
+    font-size: 16px;
     margin-right: 10px;
 }
-.info-text{
-    color: black;
-    margin-right: 16px;
-}
-/***********HEBERGEMENT***********/
-#hebergementbox{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    height: 650px;  
-    padding-left: 5px;
-}
-.titrebox {
-    color: black;
-    font-size: 25px;
-    padding-left: 8px;
 
+/***********HEBERGEMENT***********/
+#hebergement{
+    display: flex;
+    justify-content: space-between;  
+}
+#hebergement .marseille {
+    background-color: #f2f2f2;
+    flex: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: content-box;
 }
 .hebergementmarseille{
     display: flex;
     flex-wrap: wrap;
-}
-.hebergement{
-    background-color: #f2f2f2;
-    flex: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 650px; 
-    margin-right: 20px;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: center;
+    justify-content: space-between;
 }
 .card{
     height: 230px;
@@ -267,16 +259,15 @@ a.menu:hover{
 }
 .afficherplus {
     color: black;
-    padding-left: 8px;
+    padding: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 100%;
 }
-
 
 /*************POPULAIRE**********************/
 #populaire{
     background-color: #f2f2f2;
-    flex: 25%;
+    flex: 30%;
     margin-left: 20px;
     border-radius: 20px;
     padding: 20px;   
@@ -293,15 +284,16 @@ a.menu:hover{
 }
 .fa-chart-line:before {
     position: absolute;
-    right: 100px;
-    margin-top: -40px;
+    right: 75px;
+    margin-top: -35px;
     color: black;
     
 }  
 .cardpop{
+    display: flex;
     background: white;
     height:165px;
-    width: 400px;
+    width: 100%;
     margin: 0 5px 20px 5px;
     padding: 5px;
     border-radius: 20px;
@@ -312,10 +304,10 @@ a.menu:hover{
     transition: all 1s ease;
 }
 .imagepop{
-    width: 173px;
-    height: 150px;
+    width: 135px;
+    height: 100%;
     border-radius: 15px 0 0 15px;
-    margin: 2px 10px 2px 0px;
+    margin-right: 10px;
     cursor: pointer;
     transition-duration: 0.1s;
     object-fit: cover;
@@ -327,20 +319,22 @@ a.menu:hover{
     color: inherit;
     text-decoration: none;
     transition: all 1s ease;
-}    
-.textpop h3{
-    margin: 7px;
-}
+}  
+.textpop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+}  
 .textpop p{
     margin: 0px;
     font-weight: 100;
 } 
 .etoilepop1{
-    margin-top: 50px;
+    margin-top: 55px;
 }
-   
 .etoilepop{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 /***************ACTIVITES*************/
@@ -359,7 +353,6 @@ a.menu:hover{
 }
 .titreactivites{
     color: black;
-    font-size: 25px;
     padding-left: 8px;
     margin-top: 40px;
 }
@@ -369,7 +362,7 @@ a.menu:hover{
     background: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 40px 0px 5px;
+    margin: 0 30px 0px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -388,7 +381,6 @@ a.menu:hover{
     margin: 3px 2px;
     font-weight: bold;
     margin: 19px 24px;
-    font-size: 18px;
 }
 
 .box-activites2356{
@@ -402,7 +394,7 @@ a.menu:hover{
     background: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 40px 40px 5px;
+    margin: 0 30px 40px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -423,7 +415,7 @@ a.menu:hover{
     background: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 40px 40px 5px;
+    margin: 0 30px 40px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -444,7 +436,7 @@ a.menu:hover{
     background: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 40px 40px 5px;
+    margin: 0 30px 40px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -494,32 +486,185 @@ a.menu:hover{
 
 /*********TABLETTE**************/
 
-@media  (max-widht:992px) { 
-
+@media  (max-width: 992.9888px) { 
+body{
+    padding: 0px 20px;
+}
+#hebergement{
+    display: flex;
+    flex-direction: column-reverse;  
+}
+.marseille{
+    margin: 30px;
+}
+#populaire{
+    margin: 30px;
+}
+.imagepop{
+    width: 300px;
 }
 
+/**activites**/
+.bloc-activites{
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+#activites{ 
+    width: 100%;
+    margin: 0 10px 10px 10px;
+} 
+.titreactivites{
+    margin-top: 15px;
+}
+.activites {
+    height: 200px;
+    width: 430px;
+    margin: 15px;
+}
+.img{
+    height: 150px;
+    width: 430px;
+}
+}
+/******************************/
 /*********SMARTPHONE***********/
+@media  (max-width: 767.9888px) {
+body{ 
+    width: 100%;
+    padding: 5px;
+    margin:5px
+}
+/**HEADER**/
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+} 
+header nav ul {
+    margin: 0px -20px;
+    padding: 0;
+}
+header nav ul li {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+}
+a nav ul li:hover{
+    color: inherit;
+    text-decoration: none;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+}
+.fa-search {
+    display: inline;
+    color: white;
+    background-color: #0065fc;
+    padding: 18px;
+    border-radius: 18px;
+    right: 52px;
+    cursor: pointer;
+}
+.fa-search:hover{
+    transform: translateY(2px);
+    box-shadow:0 0 16px #707070;
+}
+.fa-search:active{
+    transform: translateY(4px);
+    box-shadow: 0 1px #dedee0;
+}
+.bouton {
+    border-radius: 15px;
+    display: none;
+}
+.search{
+    margin: 10px 0 15px 0;
+}
+/**filtres**/
+.filtre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtretitre{
+    width: 100%;
+}
+.marge{
+    margin: 0;
+}
+.filtre-box{
+    margin: 5px;
+}
+/**hebergement**/
+#hebergement{
+    display: flex;
+    flex-direction: column-reverse;    
+}
+#hebergement .marseille {
+    background-color: white;
+}
+#populaire{
+    border-radius: 0px;
+    margin: 0 20px 0 10px;
+}
+.fa-chart-line:before{
+    right: 55px;
+}
+.card{
+    width: 95%;
+    height: 210px;
+    font-size: 14px;
+}
+.cardpop{
+    width: 95%;
+    height: 150px;
+    padding: 5px;       
+    margin: 8px;
+    font-size: 14px;
+}
+.imagepop{
+    width: 130px;
+}
+.etoilepop1{
+    margin-top: 40px;
+}   
+/**activites**/
+.bloc-activites{
+    flex-direction: row;
+    height: 100%;
+}
+#activites{ 
+    width: 100%;
+    margin: 0 10px 10px 10px;
+} 
+.titreactivites{
+    margin-top: 15px;
+}
+.activites {
+    height: 200px;
+    width: 320px;
+    margin: 15px;
+}
+.img{
+    height: 150px;
+    width: 320px;
+}
+/**footer**/
 
-@media  (max-widht:767px) {
-    /**HEADER**/
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 150px;
-        margin: 0;
-    }
-    .logo{
-        height: 60px;
-        
-    }    
-    .nav{
-        width: 100%;
-    }
-    .menu{
-        width: 50%;
-        padding: 15px 0;
-        border-bottom: solid 2px #0065fc;
-    }
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 100%;
+}  
 }
 
