@@ -5,7 +5,7 @@
 body { 
     font-size: 16px;
     margin: 0px;
-    padding: 0px 50px; 
+    padding: 0px 20px; 
 } 
 .container {
 	display: flex;
@@ -30,6 +30,7 @@ h2{
 }
 h3{
     font-size: 100%;
+    margin-top: 5px;
 }
 .fa-star{
     color: #0065fc;
@@ -208,7 +209,7 @@ header nav ul li:hover a {
 #hebergement .marseille {
     background-color: #f2f2f2;
     flex: 70%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     box-sizing: content-box;
 }
@@ -270,7 +271,7 @@ header nav ul li:hover a {
     flex: 30%;
     margin-left: 20px;
     border-radius: 20px;
-    padding: 20px;   
+    padding: 10px;   
 }
 .titreboxpop{
     display: flex;
@@ -333,125 +334,113 @@ header nav ul li:hover a {
 .etoilepop1{
     margin-top: 55px;
 }
-.etoilepop{
+.etoilepop2{
     margin-top: 35px;
+}
+.etoilepop3{
+    margin-top: 55px;
 }
 
 /***************ACTIVITES*************/
 #activites{
-    width: 80%;
-}
-.bloc-activites{
-    display: flex; 
-    flex-flow: column wrap;
-    align-content: space-between;
-    height: 650px;
-    width: 80%;
-    padding: 10px 5px 10px 5px;
-    box-sizing: border-box;
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .titreactivites{
     color: black;
     padding-left: 8px;
     margin-top: 40px;
 }
+.bloc-activites{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box; 
+}
+.double-card{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+} 
 .card-activites1et4{
     height: 550px;
-    width: 320px;
+    width: 23%;
     background: white;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 30px 0px 5px;
-    box-shadow: 0 5px 16px #0000002e;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    transition: all 1s ease;
+    margin-right: 20px;
 }
 .activites1et4img{
     background-color: white;
     border-radius: 15px 15px 0px 0px;
     height: 485px;
-    width: 320px;
+    width: 100%;
     object-fit: cover;
-    transition-duration: 0.1s;
-    cursor: pointer;
+}
+.card-activites2{
+    height: 300px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    
+} 
+.activites2img{
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    height: 240px;
+    width:100%;
+    object-fit: cover;
+}
+.card-activites3{
+    height: 210px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+}
+.activites3img{
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    height: 150px;
+    width:100%;
+    object-fit: cover;
+}
+.card-activites5et6{
+    height: 255px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom:40px;   
+} 
+.activites5et6img{
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    height: 190px;
+    width:100%;  
+    object-fit: cover;  
 }
 .textactivites{
     margin: 3px 2px;
     font-weight: bold;
     margin: 19px 24px;
 }
-
-.box-activites2356{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} 
-.card-activites2{
-    height: 300px;
-    width: 400px;
-    background: white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin: 0 30px 40px 5px;
-    box-shadow: 0 5px 16px #0000002e;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    transition: all 1s ease;
-} 
-.activites2img{
-    background-color: white;
-    border-radius: 15px 15px 0px 0px;
-    height: 240px;
-    width:400px;
+.activites{
     object-fit: cover;
     transition-duration: 0.1s;
     cursor: pointer;
-}
-.card-activites3{
-    height: 210px;
-    width: 400px;
-    background: white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin: 0 30px 40px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     transition: all 1s ease;
 }
-.activites3img{
-    background-color: white;
-    border-radius: 15px 15px 0px 0px;
-    height: 150px;
-    width:400px;
-    object-fit: cover;
-    transition-duration: 0.1s;
-    cursor: pointer;
-}
-.card-activites56{
-    height: 255px;
-    width: 400px;
-    background: white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin: 0 30px 40px 5px;
-    box-shadow: 0 5px 16px #0000002e;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    transition: all 1s ease;
-} 
-.activites56img{
-    background-color: white;
-    border-radius: 15px 15px 0px 0px;
-    height: 190px;
-    width:400px;
-    object-fit: cover;
-    transition-duration: 0.1s;
-    cursor: pointer;
-}
-
 .activites:hover{
     transform: scale(1.05); /* Safari et Chrome */
     -moz-transform: scale(1.05); /* Firefox */
@@ -461,6 +450,9 @@ header nav ul li:hover a {
 } 
 
 /**************FOOTER**************/
+footer{
+    padding: 10px;
+}
 #footer{
     display: flex;
     background-color: #F2F2F2;
@@ -482,189 +474,247 @@ header nav ul li:hover a {
     margin: 15px 0;
     font-weight: 500;
 }
-/********RESPONSIVE************/
 
+
+/********RESPONSIVE************/
+@media (max-width: 1024px) {
+    .etoilepop1{
+        margin-top: 20px;
+    }
+    .etoilepop2{
+        margin-top: 35px;
+    }
+    .etoilepop3{
+        margin-top: 20px;
+    }
 /*********TABLETTE**************/
 
-@media  (max-width: 992.9888px) { 
-body{
-    padding: 0px 20px;
-}
-#hebergement{
-    display: flex;
-    flex-direction: column-reverse;  
-}
-.marseille{
-    margin: 30px;
-}
-#populaire{
-    margin: 30px;
-}
-.imagepop{
-    width: 300px;
-}
-
-/**activites**/
-.bloc-activites{
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-}
-#activites{ 
-    width: 100%;
-    margin: 0 10px 10px 10px;
-} 
-.titreactivites{
-    margin-top: 15px;
-}
-.activites {
-    height: 200px;
-    width: 430px;
-    margin: 15px;
-}
-.img{
-    height: 150px;
-    width: 430px;
-}
+@media (max-width: 992.9888px) { 
+    body{
+        padding: 0px 20px;
+    }
+    h1{
+        color: red;
+    }
+    #hebergement{
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+    #populaire{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .hebergementpop{
+        display: flex;
+        flex-direction: row;
+    }
+    .etoilepop1{
+        margin-top: 20px;
+    }
+    .etoilepop2, .etoilepop3{
+        margin-top: 40px;
+    }
+    .card{
+        width: 48%;
+        height: 210px;
+        font-size: 14px;
+    }
+    
+    /**activites**/
+    #activites{ 
+        width: 100%;
+        margin: 0 10px 10px 10px;
+    } 
+    .bloc-activites{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .titreactivites{
+        margin-top: 25px;
+    }
+    .double-card{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .card-activites1et4, .card-activites2, .card-activites3, .card-activites5et6 {
+        height: 200px;
+        width: 400px;
+        margin: 15px;
+    }
+    .activites1et4img{
+        height: 150px;
+        width: 100%;
+    }
+    .activites2img, .activites3img, .activites5et6img{
+        height: 150px;
+        width: 400px;
+    }
+    
 }
 /******************************/
 /*********SMARTPHONE***********/
-@media  (max-width: 767.9888px) {
-body{ 
-    width: 100%;
-    padding: 5px;
-    margin:5px
-}
-/**HEADER**/
-header{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-} 
-header nav ul {
-    margin: 0px -20px;
-    padding: 0;
-}
-header nav ul li {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin: 0px;
-    border-top: none;
-    border-bottom: 2px solid #F2F2F2;
-}
-a nav ul li:hover{
-    color: inherit;
-    text-decoration: none;
-    color: #0065fc;
-    border-bottom: 2px solid #0065fc;
-}
-.fa-search {
-    display: inline;
-    color: white;
-    background-color: #0065fc;
-    padding: 18px;
-    border-radius: 18px;
-    right: 52px;
-    cursor: pointer;
-}
-.fa-search:hover{
-    transform: translateY(2px);
-    box-shadow:0 0 16px #707070;
-}
-.fa-search:active{
-    transform: translateY(4px);
-    box-shadow: 0 1px #dedee0;
-}
-.bouton {
-    border-radius: 15px;
-    display: none;
-}
-.search{
-    margin: 10px 0 15px 0;
-}
-/**filtres**/
-.filtre{
-    display: flex;
-    flex-wrap: wrap;
-}
-.filtretitre{
-    width: 100%;
-}
-.marge{
-    margin: 0;
-}
-.filtre-box{
-    margin: 5px;
-}
-/**hebergement**/
-#hebergement{
-    display: flex;
-    flex-direction: column-reverse;    
-}
-#hebergement .marseille {
-    background-color: white;
-}
-#populaire{
-    border-radius: 0px;
-    margin: 0 20px 0 10px;
-}
-.fa-chart-line:before{
-    right: 55px;
-}
-.card{
-    width: 95%;
-    height: 210px;
-    font-size: 14px;
-}
-.cardpop{
-    width: 95%;
-    height: 150px;
-    padding: 5px;       
-    margin: 8px;
-    font-size: 14px;
-}
-.imagepop{
-    width: 130px;
-}
-.etoilepop1{
-    margin-top: 40px;
-}   
-/**activites**/
-.bloc-activites{
-    flex-direction: row;
-    height: 100%;
-}
-#activites{ 
-    width: 100%;
-    margin: 0 10px 10px 10px;
-} 
-.titreactivites{
-    margin-top: 15px;
-}
-.activites {
-    height: 200px;
-    width: 320px;
-    margin: 15px;
-}
-.img{
-    height: 150px;
-    width: 320px;
-}
-/**footer**/
+@media (max-width: 767.9888px) {
+    body{ 
+        padding: 5px;
+        margin:5px
+    }
+    h1{
+        color: aqua;
+    }
+    /**HEADER**/
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    } 
+    header nav ul {
+       
+        padding: 0;
+    }
+    header nav ul li {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin: 0px;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    a nav ul li:hover{
+        color: inherit;
+        text-decoration: none;
+        color: #0065fc;
+        border-bottom: 2px solid #0065fc;
+    }
+    .ville{
+        padding: 0;
+        font-size:15px;
+    }
+    .fa-search {
+        display: inline;
+        color: white;
+        background-color: #0065fc;
+        padding: 18px;
+        border-radius: 18px;
+        right: 52px;
+        cursor: pointer;
+    }
+    .fa-search:hover{
+        transform: translateY(2px);
+        box-shadow:0 0 16px #707070;
+    }
+    .fa-search:active{
+        transform: translateY(4px);
+        box-shadow: 0 1px #dedee0;
+    }
+    .bouton {
+        border-radius: 15px;
+        display: none;
+    }
+    .search{
+        margin: 10px 0 15px 0;
+    }
+    /**filtres**/
+    .filtre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtretitre{
+        width: 100%;
+    }
+    .marge{
+        margin: 0;
+    }
+    .filtre-box{
+        margin: 5px;
+    }
+    /**hebergement**/
+    #hebergement{
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+    #hebergement .marseille {
+        background-color: white;
+    }
+    .hebergementpop{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /**populaire**/
+    #populaire{
+        border-radius: 0px;
+        padding: 5px;
+    }
+    .fa-chart-line:before{
+        right: 55px;
+    }
+    .card{
+        width: 95%;
+        height: 210px;
+        font-size: 14px;
+    }
+    .cardpop{
+        width: 95%;
+        height: 150px;
+        padding: 5px;       
+        margin: 8px;
+        font-size: 14px;
+    }
+    .imagepop{
+        width: 130px;
+    }
+    .etoilepop1, .etoilepop3{
+        margin-top: 50px;
+    }
+    .etoilepop2{
+        margin-top: 35px;
+    }
+    /**activites**/
+    .bloc-activites{
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+    #activites{ 
+        width: 100%;
+        margin: 0 10px 10px 10px;
+    } 
+    .titreactivites{
+        margin-top: 15px;
+    }
+    .double-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .activites {
+        
+        height: 200px;
+        width: 90%;
+        margin: 15px;
+    }
+    .img{
+        height: 150px;
+        width: 100%;
+    }
+    /**footer**/
 
-#footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 50px;
-    width: 100%;
-}  
+    #footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }  
 }
-
+@media (max-width: 320px) {
+    .etoilepop1, .etoilepop3{
+        margin-top: 25px;
+    }
+    .etoilepop2{
+        margin-top: 40px;
+    }
+}
