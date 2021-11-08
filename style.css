@@ -1,6 +1,5 @@
 * {
     font-family: 'Raleway' , 'sans-serif';
-    
 }
 body { 
     font-size: 16px;
@@ -487,15 +486,14 @@ footer{
     .etoilepop3{
         margin-top: 20px;
     }
+}    
 /*********TABLETTE**************/
 
 @media (max-width: 992.9888px) { 
     body{
         padding: 0px 20px;
     }
-    h1{
-        color: red;
-    }
+    
     #hebergement{
         display: flex;
         flex-direction: column-reverse;  
@@ -559,9 +557,7 @@ footer{
         padding: 5px;
         margin:5px
     }
-    h1{
-        color: aqua;
-    }
+    
     /**HEADER**/
     header{
         display: flex;
@@ -711,7 +707,7 @@ footer{
     }  
 }
 @media (max-width: 320px) {
-    .etoilepop1, .etoilepop3{
+    .etoilepop1, .etoilepop3 {
         margin-top: 25px;
     }
     .etoilepop2{
